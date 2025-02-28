@@ -1,333 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jay Himanshu Mistry - Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jay Himanshu Mistry - Portfolio</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Animate.css for animations -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <style>
-    /* Custom CSS to remove bullet points from navbar */
-    .navbar-nav .nav-item {
-      list-style-type: none;
-      /* Remove bullet points */
-    }
-
-    ul {
-      list-style-type: disc !important;
-      padding-left: 20px !important;
-    }
-
-    #projects .text-black {
-      color: black;
-    }
-
-    #projects .card-link {
-      text-decoration: none;
-    }
-
-    .card {
-      margin-bottom: 20px;
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-    }
-
-    .hover-text-change:hover .card-title,
-    .hover-text-change:hover .card-text {
-      color: #007bff;
-    }
-
-    @media (max-width: 768px) {
-      .col-md-4 {
-        flex: 0 0 100%;
-        max-width: 100%;
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Animate.css for animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      /* Custom CSS to remove bullet points from navbar */
+      .navbar-nav .nav-item {
+        list-style-type: none;
+        /* Remove bullet points */
       }
-    }
-  </style>
-</head>
 
-<body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #1f3864">
-    <!-- Navbar Toggler Button (for mobile) -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="container">
-      <!-- Navbar Links -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link fw-bold text-white" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold text-white" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold text-white" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold text-white" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold text-white" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+      ul {
+        list-style-type: disc !important;
+        padding-left: 20px !important;
+      }
 
-  <!-- Hero Section -->
-  <header class="hero-section text-center text-white">
-    <div class="container">
-      <h1 class="display-4">
-        <span id="name" class="animate__animated animate__fadeInDown animate__slow flip-text"></span>
-        <span id="welcome" class="animate__animated animate__fadeInDown animate__slow flip-text"></span>
-      </h1>
-      <p class="lead animate__animated animate__fadeInUp animate__delay-3s flip-text">
-        I am a Delphi Developer currently working at DYNAMIC SOFTLINK PVT.
-        LTD.
-      </p>
-      <div class="align-items-center">
-        <a href="https://www.linkedin.com/in/jay-mistry-jhm22082002/" target="_blank" class="text-white me-3">
-          <i class="fab fa-linkedin fa-lg"></i>
-        </a>
-        <a href="https://github.com/jay-228" target="_blank" class="text-white me-3">
-          <i class="fab fa-github fa-lg"></i>
-        </a>
-        <a href="https://www.instagram.com/jay_mistry_228?igsh=MWl2dG8xdndiOGhmeQ==" target="_blank"
-          class="text-white me-3">
-          <i class="fab fa-instagram fa-lg"></i>
-        </a>
-      </div>
-    </div>
-  </header>
+      #projects .text-black {
+        color: black;
+      }
 
-  <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">About Me</h2>
-      <div class="row">
-        <div class="col-md-2 text-center" style="margin-right: 50px">
-          <img src="assets/images/profile.jpg" alt="Jay Himanshu Mistry" class="img-fluid" />
-        </div>
-        <div class="col-md-6">
-          <p>
-            Hello! I'm Jay Himanshu Mistry, a Delphi Developer at DYNAMIC
-            SOFTLINK PVT. LTD, specializing in software development with
-            Delphi and Microsoft SQL Server.
-          </p>
-          <p>
-            Currently,Software development is a dynamic process of designing,
-            building, testing, and maintaining applications that drive
-            innovation and efficiency 🚀💻.
-          </p>
-          <a href="assets/images/Jay-Himanshu-Mistry-Resume.pdf" download class="btn btn-outline-primary">
-            <i class="fas fa-download me-2"></i>Download Resume
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+      #projects .card-link {
+        text-decoration: none;
+      }
 
-  <!-- Education Section -->
-  <section id="education" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Education</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <h4>Bachelor of Computer Applications</h4>
-          <p>
-            <strong>C.B Patel Computer College, Vesu</strong> | 2021 – 2024
-          </p>
-        </div>
-        <div class="col-md-6">
-          <h4>Higher Secondary Education Board</h4>
-          <p><strong>Vidhya Vihar School</strong> | 2020</p>
-        </div>
-      </div>
-    </div>
-  </section>
+      .card {
+        margin-bottom: 20px;
+        transition: transform 0.3s;
+      }
 
-  <!-- Courses Section -->
-  <section id="courses" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Courses</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <h4>Red and White Multimedia Education</h4>
-          <p><strong>Duration</strong> | Jun-2023 To Nov-2024 </p>
-        </div>
-        <div class="col-md-6">
-          <h4>Full-Stack Developing</h4>
-          <p><strong>Institution Name</strong> | Dindoli(RNW8)</p>
-        </div>
-      </div>
-    </div>
-  </section>
+      .card:hover {
+        transform: scale(1.05);
+      }
 
-  <!-- Skills Section -->
-  <section id="skills" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Skills</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <h4>Frontend</h4>
-          <ul>
-            <li>HTML, CSS, Bootstrap</li>
-            <li>JavaScript, jQuery</li>
-            <li>React.js</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4>Backend</h4>
-          <ul>
-            <li>Microsoft SQL</li>
-            <li>MongoDB</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4>Software</h4>
-          <ul>
-            <li>Rad Studio</li>
-            <li>VS Code</li>
+      .hover-text-change:hover .card-title,
+      .hover-text-change:hover .card-text {
+        color: #007bff;
+      }
+
+      @media (max-width: 768px) {
+        .col-md-4 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: #1f3864"
+    >
+      <!-- Navbar Toggler Button (for mobile) -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container">
+        <!-- Navbar Links -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-white" href="#education"
+                >Education</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-white" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-white" href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-white" href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-5 bg-light" style="background-color: white !important">
-    <div class="container">
-      <h2 class="text-center mb-4 text-black">Projects</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <a href="https://github.com/jay-228/React-DataTable" class="card-link">
-            <div class="card hover-text-change">
-              <div class="card-body">
-                <h5 class="card-title text-black">React-Data_table</h5>
-                <p class="card-text text-black">
-                  A Product Management System with CRUD operations, sorting,
-                  searching, and pagination.
-                </p>
-              </div>
-            </div>
+    <!-- Hero Section -->
+    <header class="hero-section text-center text-white">
+      <div class="container">
+        <h1 class="display-4">
+          <span
+            id="name"
+            class="animate__animated animate__fadeInDown animate__slow flip-text"
+          ></span>
+          <span
+            id="welcome"
+            class="animate__animated animate__fadeInDown animate__slow flip-text"
+          ></span>
+        </h1>
+        <p
+          class="lead animate__animated animate__fadeInUp animate__delay-3s flip-text"
+        >
+          I am a Delphi Developer currently working at DYNAMIC SOFTLINK PVT.
+          LTD.
+        </p>
+        <div class="align-items-center">
+          <a
+            href="https://www.linkedin.com/in/jay-mistry-jhm22082002/"
+            target="_blank"
+            class="text-white me-3"
+          >
+            <i class="fab fa-linkedin fa-lg"></i>
           </a>
-        </div>
-        <div class="col-md-4">
-          <a href="https://github.com/jay-228/React-Navigator_" class="card-link">
-            <div class="card hover-text-change">
-              <div class="card-body">
-                <h5 class="card-title text-black">React-Navigator</h5>
-                <p class="card-text text-black">
-                  A product catalog with authentication and private routes.
-                </p>
-              </div>
-            </div>
+          <a
+            href="https://github.com/jay-228"
+            target="_blank"
+            class="text-white me-3"
+          >
+            <i class="fab fa-github fa-lg"></i>
           </a>
-        </div>
-        <div class="col-md-4">
-          <a href="https://github.com/jay-228/Node-Login_with_Blog_" class="card-link">
-            <div class="card hover-text-change">
-              <div class="card-body">
-                <h5 class="card-title text-black">Node-Login_With_Blog</h5>
-                <p class="card-text text-black">
-                  A Blog Management System with JWT authentication and
-                  role-based access.
-                </p>
-              </div>
-            </div>
+          <a
+            href="https://www.instagram.com/jay_mistry_228?igsh=MWl2dG8xdndiOGhmeQ=="
+            target="_blank"
+            class="text-white me-3"
+          >
+            <i class="fab fa-instagram fa-lg"></i>
           </a>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Contact Me</h2>
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" required />
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row">
+          <div class="col-md-2 text-center" style="margin-right: 50px">
+            <img
+              src="assets/images/profile.jpg"
+              alt="Jay Himanshu Mistry"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6">
+            <p>
+              Hello! I'm Jay Himanshu Mistry, a Delphi Developer at DYNAMIC
+              SOFTLINK PVT. LTD, specializing in software development with
+              Delphi and Microsoft SQL Server.
+            </p>
+            <p>
+              Currently,Software development is a dynamic process of designing,
+              building, testing, and maintaining applications that drive
+              innovation and efficiency 🚀💻.
+            </p>
+            <a
+              href="assets/images/Jay-Himanshu-Mistry-Resume.pdf"
+              download
+              class="btn btn-outline-primary"
+            >
+              <i class="fas fa-download me-2"></i>Download Resume
+            </a>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" required />
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Education</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Bachelor of Computer Applications</h4>
+            <p>
+              <strong>C.B Patel Computer College, Vesu</strong> | 2021 – 2024
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h4>Higher Secondary Education Board</h4>
+            <p><strong>Vidhya Vihar School</strong> | 2020</p>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="5" required></textarea>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Courses</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Red and White Multimedia Education</h4>
+            <p><strong>Duration</strong> | Jun-2023 To Nov-2024</p>
+          </div>
+          <div class="col-md-6">
+            <h4>Full-Stack Developing</h4>
+            <p><strong>Institution Name</strong> | Dindoli(RNW8)</p>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2024 Jay Himanshu Mistry. All rights reserved.</p>
-  </footer>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Skills</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Frontend</h4>
+            <ul>
+              <li>HTML, CSS, Bootstrap</li>
+              <li>JavaScript, jQuery</li>
+              <li>React.js</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Backend</h4>
+            <ul>
+              <li>Microsoft SQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Software</h4>
+            <ul>
+              <li>Rad Studio</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
-  <script>
-    // Typing Effect
-    const nameElement = document.getElementById("name");
-    const welcomeElement = document.getElementById("welcome");
+    <!-- Projects Section -->
+    <section
+      id="projects"
+      class="py-5 bg-light"
+      style="background-color: white !important"
+    >
+      <div class="container">
+        <h2 class="text-center mb-4 text-black">Projects</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <a
+              href="https://github.com/jay-228/React-DataTable"
+              class="card-link"
+            >
+              <div class="card hover-text-change">
+                <div class="card-body">
+                  <h5 class="card-title text-black">React-Data_table</h5>
+                  <p class="card-text text-black">
+                    A Product Management System with CRUD operations, sorting,
+                    searching, and pagination.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://github.com/jay-228/React-Navigator_"
+              class="card-link"
+            >
+              <div class="card hover-text-change">
+                <div class="card-body">
+                  <h5 class="card-title text-black">React-Navigator</h5>
+                  <p class="card-text text-black">
+                    A product catalog with authentication and private routes.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              href="https://github.com/jay-228/Node-Login_with_Blog_"
+              class="card-link"
+            >
+              <div class="card hover-text-change">
+                <div class="card-body">
+                  <h5 class="card-title text-black">Node-Login_With_Blog</h5>
+                  <p class="card-text text-black">
+                    A Blog Management System with JWT authentication and
+                    role-based access.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    const nameText = "JAY HIMANSHU MISTRY";
-    const welcomeText = "Welcome to My Portfolio!";
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
 
-    let nameIndex = 0;
-    let welcomeIndex = 0;
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 Jay Himanshu Mistry. All rights reserved.</p>
+    </footer>
 
-    function typeName() {
-      if (nameIndex < nameText.length) {
-        nameElement.textContent += nameText.charAt(nameIndex);
-        nameIndex++;
-        setTimeout(typeName, 100); // Adjust typing speed here
-      } else {
-        // Wait for a short delay before removing the name and typing the welcome text
-        setTimeout(() => {
-          nameElement.textContent = ""; // Remove the name
-          typeWelcome(); // Start typing the welcome text
-        }, 1000); // Delay before removing the name and starting the next text
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+      // Typing Effect
+      const nameElement = document.getElementById("name");
+      const welcomeElement = document.getElementById("welcome");
+
+      const nameText = "JAY HIMANSHU MISTRY";
+      const welcomeText = "Welcome to My Portfolio!";
+
+      let nameIndex = 0;
+      let welcomeIndex = 0;
+
+      function typeName() {
+        if (nameIndex < nameText.length) {
+          nameElement.textContent += nameText.charAt(nameIndex);
+          nameIndex++;
+          setTimeout(typeName, 100); // Adjust typing speed here
+        } else {
+          // Wait for a short delay before removing the name and typing the welcome text
+          setTimeout(() => {
+            nameElement.textContent = ""; // Remove the name
+            typeWelcome(); // Start typing the welcome text
+          }, 1000); // Delay before removing the name and starting the next text
+        }
       }
-    }
 
-    function typeWelcome() {
-      if (welcomeIndex < welcomeText.length) {
-        welcomeElement.textContent += welcomeText.charAt(welcomeIndex);
-        welcomeIndex++;
-        setTimeout(typeWelcome, 100); // Adjust typing speed here
-      } else {
-        // Wait for a short delay before removing the welcome text and restarting the loop
-        setTimeout(() => {
-          welcomeElement.textContent = ""; // Remove the welcome text
-          nameIndex = 0; // Reset name index
-          welcomeIndex = 0; // Reset welcome index
-          typeName(); // Restart the loop
-        }, 1000); // Delay before restarting the loop
+      function typeWelcome() {
+        if (welcomeIndex < welcomeText.length) {
+          welcomeElement.textContent += welcomeText.charAt(welcomeIndex);
+          welcomeIndex++;
+          setTimeout(typeWelcome, 100); // Adjust typing speed here
+        } else {
+          // Wait for a short delay before removing the welcome text and restarting the loop
+          setTimeout(() => {
+            welcomeElement.textContent = ""; // Remove the welcome text
+            nameIndex = 0; // Reset name index
+            welcomeIndex = 0; // Reset welcome index
+            typeName(); // Restart the loop
+          }, 1000); // Delay before restarting the loop
+        }
       }
-    }
 
-    // Start the typing effect
-    typeName();
-  </script>
-</body>
-
+      // Start the typing effect
+      typeName();
+    </script>
+  </body>
 </html>
